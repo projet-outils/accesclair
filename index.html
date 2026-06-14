@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Votre site est-il conforme à l'European Accessibility Act ? — vérification gratuite</title>
+<meta name="description" content="Depuis le 28 juin 2025, l'European Accessibility Act impose l'accessibilité des sites web (amendes jusqu'à 100 000 €). Recevez gratuitement un rapport clair sur la conformité de votre site (EAA / RGAA). Honnête, sans overlay.">
+<style>
+  :root{
+    --bg:#f6f8fb; --card:#ffffff; --ink:#0f1b2d; --muted:#5b6b80;
+    --accent:#1f6feb; --accent2:#0ea5a3; --bad:#d4351c; --good:#0a7d34; --line:#e3e9f2;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+  .wrap{max-width:860px;margin:0 auto;padding:22px 18px 70px}
+  header{display:flex;align-items:center;gap:10px;margin-bottom:30px}
+  .logo{font-weight:800;font-size:1.15rem}
+  .logo span{color:var(--accent)}
+  .pill{margin-left:auto;font-size:.78rem;background:#eaf2ff;color:var(--accent);border:1px solid #cfe0ff;border-radius:999px;padding:4px 12px;font-weight:600}
+  h1{font-size:2rem;line-height:1.2;margin:.2em 0 .3em}
+  .lead{font-size:1.12rem;color:var(--muted);margin:0 0 1.4em}
+  .alert{background:#fff5f4;border:1px solid #f3c9c4;border-left:4px solid var(--bad);border-radius:10px;padding:14px 16px;margin:0 0 24px;font-size:.95rem}
+  .alert b{color:var(--bad)}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px;box-shadow:0 6px 24px rgba(15,27,45,.05);margin-bottom:22px}
+  form label{display:block;font-weight:600;font-size:.92rem;margin:14px 0 6px}
+  form input{width:100%;border:1px solid var(--line);border-radius:10px;padding:13px 14px;font-size:1rem;background:#fff}
+  form input:focus{outline:2px solid var(--accent);border-color:transparent}
+  .btn{margin-top:18px;width:100%;background:var(--accent);color:#fff;border:0;border-radius:10px;padding:15px;font-size:1.05rem;font-weight:700;cursor:pointer}
+  .btn:hover{background:#1a5fd0}
+  .rea{font-size:.82rem;color:var(--muted);margin-top:12px;text-align:center}
+  h2{font-size:1.3rem;margin:1.8em 0 .5em}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:600px){.grid{grid-template-columns:1fr}}
+  .mini{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+  .mini h3{margin:0 0 .3em;font-size:1rem}
+  .mini p{margin:0;color:var(--muted);font-size:.9rem}
+  .honest{background:#f0fdf9;border:1px solid #bfe9e2;border-left:4px solid var(--accent2);border-radius:10px;padding:16px 18px}
+  .honest h2{margin-top:0;color:#0a6b69}
+  ul.clean{padding-left:1.1em}.clean li{margin:.35em 0}
+  .foot{font-size:.8rem;color:var(--muted);border-top:1px solid var(--line);margin-top:32px;padding-top:16px}
+  a{color:var(--accent)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">Accès<span>Clair</span></div>
+    <div class="pill">Vérification gratuite</div>
+  </header>
+
+  <h1>Votre site est-il conforme à l'European Accessibility Act ?</h1>
+  <p class="lead">Depuis le 28 juin 2025, l'accessibilité des sites web est une <b>obligation légale</b> en Europe. Recevez un rapport clair et honnête sur l'état de votre site — sans jargon, sans fausse promesse.</p>
+
+  <div class="alert">
+    ⚠️ <b>Le risque est réel :</b> amendes jusqu'à <b>100 000 € (ou 4 % du chiffre d'affaires)</b>, et le nombre de mises en demeure et de procès augmente chaque année. Les « widgets magiques » (overlays) <b>ne vous protègent pas</b> — l'un des plus connus a été condamné à 1 M$ d'amende pour publicité mensongère.
+  </div>
+
+  <div class="card">
+    <h2 style="margin-top:0">Recevez votre rapport gratuit</h2>
+    <p style="color:var(--muted);margin:.2em 0 0">On analyse votre page d'accueil et on vous envoie les points à corriger, classés par priorité. Sans engagement.</p>
+    <!-- ACTION Formspree à câbler : remplacer FORM_ID par l'identifiant du formulaire (compte gratuit Formspree, email de Jérôme) -->
+    <form action="https://formspree.io/f/FORM_ID" method="POST">
+      <label for="url">Adresse de votre site</label>
+      <input id="url" name="site_url" type="url" placeholder="https://votre-site.fr" required>
+      <label for="email">Votre email (pour recevoir le rapport)</label>
+      <input id="email" name="email" type="email" placeholder="vous@entreprise.fr" required>
+      <label for="nom">Votre nom / entreprise (facultatif)</label>
+      <input id="nom" name="nom" type="text" placeholder="Entreprise SARL">
+      <button class="btn" type="submit">Recevoir mon rapport gratuit →</button>
+      <p class="rea">🔒 Vos informations servent uniquement à vous envoyer le rapport. Pas de spam, pas de revente.</p>
+    </form>
+  </div>
+
+  <div class="honest">
+    <h2>Notre engagement : la vérité, pas un badge</h2>
+    <p style="margin:.2em 0 .6em;color:#0a6b69">Beaucoup d'outils promettent « la conformité en un clic ». C'est faux, et c'est risqué : un test automatique ne détecte qu'environ <b>30 à 40 %</b> des critères ; le reste demande une vérification humaine. Nous ne vous vendrons jamais une fausse tranquillité.</p>
+    <ul class="clean" style="color:#0a6b69">
+      <li>✅ Un scan automatique clair de ce qui ne va pas, <b>priorisé</b>.</li>
+      <li>✅ Des explications simples et un <b>plan de correction</b> (assisté par IA).</li>
+      <li>✅ Un <b>suivi dans le temps</b> pour rester conforme (option).</li>
+      <li>❌ Pas d'overlay, pas de « badge magique », pas de promesse mensongère.</li>
+    </ul>
+  </div>
+
+  <h2>Êtes-vous concerné ?</h2>
+  <div class="grid">
+    <div class="mini"><h3>E-commerce & services en ligne</h3><p>Si vous vendez en ligne à des particuliers dans l'UE, l'EAA s'applique à votre site et votre tunnel d'achat.</p></div>
+    <div class="mini"><h3>Banque, transport, télécom…</h3><p>Secteurs explicitement visés par l'EAA, avec des exigences renforcées.</p></div>
+    <div class="mini"><h3>PME au-dessus des seuils</h3><p>Les micro-entreprises (&lt;10 salariés et &lt;2 M€) ont des exemptions partielles ; au-delà, vous êtes concerné.</p></div>
+    <div class="mini"><h3>Secteur public (RGAA)</h3><p>Déjà soumis au RGAA français — l'EAA étend désormais la logique au privé.</p></div>
+  </div>
+
+  <h2>Questions fréquentes</h2>
+  <p><b>C'est quoi l'European Accessibility Act ?</b> Une directive européenne (en vigueur depuis le 28 juin 2025) qui impose que les produits et services numériques soient utilisables par les personnes en situation de handicap, selon les critères WCAG.</p>
+  <p><b>Et le RGAA ?</b> Le Référentiel Général d'Amélioration de l'Accessibilité, la déclinaison française des critères. L'EAA et le RGAA partagent la même base technique (WCAG).</p>
+  <p><b>Combien ça coûte ?</b> La vérification initiale est gratuite. Le suivi et l'accompagnement à la correction sont des options payantes, à prix PME — sans commune mesure avec un audit manuel classique (5 000 à 25 000 €).</p>
+
+  <div class="foot">
+    AccèsClair — vérification d'accessibilité web (EAA / RGAA). Page d'information ; la vérification automatique ne se substitue pas à un audit humain complet pour une conformité totale.
+  </div>
+</div>
+</body>
+</html>

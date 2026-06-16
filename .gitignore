@@ -1,0 +1,4 @@
+scanner/
+node_modules/
+*.log
+report.json
